@@ -5,15 +5,15 @@ const router = express.Router();
 
 router.post('/data', async (req, res) => {
   try{
-      const data = req.form-data
+      const data = req.body;
       const newPerson = new Person(data);
       const savedData = await newPerson.save();
-      console.log('data saved');
+      console.log('data saved',savedData);
       res.status(201).json(savedData);
   }catch(e){
       res.status(500).json(e);
   }
-})
+});
 
 router.get('/getData', async (req, res) => {
   try{
