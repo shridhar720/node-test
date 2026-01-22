@@ -1,0 +1,17 @@
+{
+  "name": "version_1",
+  "version": "1.0.0",
+  "description": "learning",
+  "license": "ISC",
+  "author": "shridhar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^5.13.21",
+    "nodemon": "^3.1.11"
+  }
+}
